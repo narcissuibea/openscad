@@ -1,5 +1,5 @@
 
-cana(height=120,diametru=90);
+cana(height=160,diametru=110);
 translate([120,10,80,])
 rotate([90,0,0])
 maner_cana();
@@ -10,7 +10,7 @@ maner_cana();
 module maner_cana();
 {
     rotate([90,0,0])
-    translate([50,60,-10])
+    translate([60,80,-10])
     {
     difference()
     {
@@ -29,7 +29,7 @@ module maner_cana();
 module cana(height,diametru)
 {
     difference(){
-    cylinder(120, diametru/2,diametru/2);
+    cylinder(160, diametru/2,diametru/2);
     translate([0,0,10])
     cylinder(height, diametru/2-5,diametru/2-5);
 }
