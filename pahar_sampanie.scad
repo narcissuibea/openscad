@@ -62,4 +62,22 @@ for(j=[0:numar_pahare_y-1])
      pahar_sampanie(raza_baza=40,grosime_baza=3,raza_picior=2,inaltime_picior=100,raza_cupa=50,            grosime_perete_cupa=2);
  }   
  
- pahare_pe_cerc(nr_pahare=10, raza_cerc=200);
+ //pahare_pe_cerc(nr_pahare=10, raza_cerc=200);
+ 
+ module grup_pahare(tip)
+ {
+     if(tip=="cerc")
+      pahare_pe_cerc(nr_pahare=10,raza_cerc=200);
+  else
+     if(tip=="sir")   
+     pahare_sir(10);
+     else
+         if(tip=="matrice")
+             pahare_matrice(nr_pahare_x=5,nr_pahare_y=7);
+         else
+             echo("tip necunoscut");
+ }
+ 
+ grup_pahare("cerc");
+ 
+ 
