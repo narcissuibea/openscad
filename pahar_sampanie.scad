@@ -78,6 +78,18 @@ for(j=[0:numar_pahare_y-1])
              echo("tip necunoscut");
  }
  
- grup_pahare("cerc");
+ //grup_pahare("cerc");
+ 
+ projection(cut=false)
+ rotate([90,0,0])
+ pahar_sampanie(raza_baza=40,grosime_baza=3,raza_picior=2,inaltime_picior=100,raza_cupa=50,            grosime_perete_cupa=2);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
